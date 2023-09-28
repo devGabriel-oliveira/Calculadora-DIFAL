@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculo DIFAL</title>
+            <link rel="stylesheet" href="estilo.css">
+
+        </head>
+
+        <body>
+
+        <header id="empresa">
+
+
+            <button id="toggle-mode">Toggle Mode</button>
+            
+            <img src="contabilizacoes.png" alt="Contabilidade">
+            <h1>Calcule o DIFAL:</h1>
+
+            
+        
+        </header> 
+
+        <div id="duvida">
+
+            <h5><a href="duvida.html">O que é o DIFAL? <img src="interrogacao.jpg"></a></h5>
+
+
+        </div>
+
+    
+
+        <section>
+
+            <div class="ajustes">
+
+                
+                <a href="index.html">Base Dupla</a>
+                <a href="base-simples.html">Base Simples</a>
+                <a href="tabela.html">Tabela ICMS</a>
+        
+        
+                </div>
+        
+        
+                <div class="ajustes">
+        
+                    <span>Aliquota Interna UF destino: <input type="number" name="calculaInterna" id="interna"></span>
+                    <span>Aliquota Interestadual: <input type="number" name="calculaInterestadual" id="interestadual"></span>
+                    
+        
+                </div>
+        
+                <div>
+        
+        
+                <form action="" id="form">
+        
+        
+                <p>Valor do item: <input type="number" name="calculaItem" id="item"></p> 
+                <p>CST Material: <input type="number" name="calculaCST" id="cst"></p>
+                <p>Valor  frete: <input type="number" name="calculaFrete" id="frete"></p> 
+                <p>Valor  IPI: <input type="number" name="calculaIPI" id="ipi"></p> 
+                <p><input type="button" value="Calcular" onclick="calcularDIFAL()"></p>
+        
+        
+                </form>
+        
+        
+                </div>
+        
+                <div>
+        
+                    <h2>Valor do DIFAL: <p id="valordifal">00</p></h2>
+        
+        
+                </div>
+
+        </section>
+
+
+        <footer><p>&copy;<a href="https://www.linkedin.com/in/gabrieldev2002/">www.linkedin.com/in/gabrieldev2002</a></p></footer>
+
+        <script src="script.js"></script>
+
+        </body>
+    </html>

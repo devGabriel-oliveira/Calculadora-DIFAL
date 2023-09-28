@@ -1,0 +1,316 @@
+
+body {
+    background-color: #111; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    padding-bottom: 100px; 
+    position: relative; 
+    box-sizing: border-box;
+}
+
+
+    #empresa img {
+    width: 120px; 
+    height: auto; 
+    border: 3px solid #39ff14; 
+    border-radius: 50%; 
+    padding: 10px;
+}
+
+
+/* Estilizando o cabeçalho */
+#empresa {
+    padding: 20px;
+}
+
+#empresa h1 {
+    color: #39ff14;
+}
+
+#duvida {
+    position: absolute;
+    top: 10px; /* Ajuste a distância do topo conforme necessário */
+    right: 10px; /* Ajuste a distância da direita conforme necessário */
+    
+}
+
+
+
+/* Estilizando os links de dúvida */
+#duvida h5 {
+    text-align: center;
+}
+
+#duvida a {
+    color: #39ff14; 
+    text-decoration: none;
+}
+
+#duvida:hover {
+    
+   
+    transform: scale(1.1); /* Aumenta o tamanho em 10% ao passar o mouse */
+     transition: transform 0.3s ease; /* Adicionando uma transição suave */
+    }
+
+#duvida img {
+    max-width: 20px; /* Reduzindo o tamanho do ícone de interrogação */
+}
+
+/* Estilizando os links de navegação */
+.ajustes a {
+    color: #39ff14; 
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Estilizando os campos de entrada */
+.ajustes span input[type="number"] {
+    background-color: #222; 
+    border: none;
+    border-bottom: 2px solid #39ff14; 
+    color: #39ff14; 
+    margin: 5px;
+    width: 100px; 
+}
+
+/* Estilizando o botão de calcular */
+#form input[type="button"] {
+    background-color: #39ff14; /* Cor neon para o botão */
+    color: #111; /* Cor de texto escura para o botão */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative; /* Adicione position relative para ajustar a posição do botão */
+    z-index: 1; /* Eleve o botão para ficar acima do resultado */
+}
+
+/* Estilize o resultado do DIFAL */
+#valordifal {
+    color: #39ff14; /* Cor neon para o valor do DIFAL */
+    font-size: 24px; /* Tamanho da fonte aumentado */
+}
+
+/* Estilize o rodapé */
+/* Estilize o rodapé sem definir um background-color */
+footer {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilize os links no footer com background destacado */
+/* Estilize os links no footer com efeito de gradiente */
+footer a {
+    color: #135008; /* Cor dos links no footer */
+    transition: color 0.3s ease; /* Efeito de transição suave para a cor do texto */
+    text-decoration: none; /* Remova a sublinhado padrão dos links */
+    position: relative; /* Crie um contexto relativo para os links */
+}
+
+footer a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #6eeb08 0%, #6eeb08 100%);
+    z-index: -1; /* Coloque o gradiente atrás do texto */
+    transition: opacity 0.3s ease; /* Efeito de transição suave para a opacidade */
+    opacity: 0; /* Inicialmente, o gradiente é transparente */
+}
+
+footer a:hover::before {
+    opacity: 1; /* Gradiente visível ao passar o mouse */
+    z-index: -1; /* Garanta que o gradiente esteja atrás do texto */
+    transition: opacity 0.3s ease; /* Efeito de transição suave para a opacidade */
+}
+
+
+
+
+/* Adicione espaçamento entre os formulários e links */
+.ajustes {
+    margin-bottom: 20px; /* Espaçamento entre os blocos de formulário e links */
+}
+
+/* Tornar a imagem mais responsiva e adicionar borda neon */
+#empresa img {
+    max-width: 80px; /* Reduza o tamanho da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 3px solid #39ff14; /* Adicione uma borda neon */
+    border-radius: 50%; /* Torna a imagem circular */
+    padding: 10px; /* Espaçamento interno para a borda neon */
+}
+
+/* Estilize os links de navegação com fundo escuro e borda neon */
+.ajustes a {
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px; /* Espaçamento interno para maior facilidade de clique */
+    border-radius: 4px; /* Cantos arredondados */
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Efeito de transição suave para a cor de fundo e borda */
+
+    /* Fundo escuro e borda neon */
+    background-color: #333; /* Cor de fundo escura padrão */
+    border: 3px solid #39ff14; /* Cor neon para a borda */
+}
+
+.ajustes a:hover {
+    background-color: #39ff14; /* Cor de fundo neon ao passar o mouse */
+    color: #111; /* Cor do texto escura ao passar o mouse */
+    border-color: #111; /* Cor neon para a borda ao passar o mouse */
+}
+
+/* Adicione uma borda à página inteira */
+body {
+    border: 5px solid #39ff14; /* Cor neon para a borda */
+    padding: 10px; /* Espaçamento interno para a borda */
+    box-sizing: border-box; /* Inclua a borda no cálculo do tamanho total */
+    padding-bottom: 90px;
+}
+
+/* Estilo para o modo "light mode" */
+.light-mode {
+    background-color: #fff; /* Cor de fundo clara */
+    color: #000; /* Cor do texto escura */
+}
+
+.light-mode #empresa img {
+    border-color: #007BFF; /* Cor da borda em modo "light mode" */
+}
+
+.light-mode .ajustes a {
+    background-color: #007BFF; /* Cor de fundo dos links em modo "light mode" */
+    color: #fff; /* Cor do texto dos links em modo "light mode" */
+}
+
+.light-mode footer {
+    background-color: #fff; /* Cor de fundo do footer em modo "light mode" */
+    color: #000; /* Cor do texto do footer em modo "light mode" */
+}
+
+.light-mode footer a {
+    color: #007BFF; /* Cor dos links no footer em modo "light mode" */
+}
+
+/* Estilize o botão "Toggle Mode" */
+#toggle-mode {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    margin: 10px;
+    background-color: #007BFF; /* Cor de fundo azul neon */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 2; /* Garante que o botão esteja acima do conteúdo */
+}
+
+#toggle-mode:hover {
+    background-color: #00FFFF; /* Cor de fundo azul neon mais clara no hover */
+}
+
+/* Estilize as fontes de h1 e h2 */
+h1 {
+    font-size: 36px; /* Aumenta o tamanho da fonte de h1 */
+    font-family: 'Arial', sans-serif; /* Altera a fonte de h1 para Arial */
+    font-weight: bold; /* Define a fonte como negrito para h1 */
+    color: #39ff14; /* Cor neon para h1 */
+    margin: 20px 0; /* Adicione margem superior e inferior para separação */
+}
+
+h2 {
+    font-size: 24px; /* Aumenta o tamanho da fonte de h2 */
+    font-family: 'Verdana', sans-serif; /* Altera a fonte de h2 para Verdana */
+    font-weight: bold; /* Define a fonte como negrito para h2 */
+    color: #1364b9; /* Cor azul neon para h2 */
+    margin: 15px 0; /* Adicione margem superior e inferior para separação */
+}
+
+/* Estilize o link com o ID "reference" */
+#reference a {
+    color: #FF5733; /* Cor personalizada para o texto do link */
+    text-decoration: none; /* Remova a sublinhado padrão */
+    font-weight: bold; /* Defina a fonte como negrito */
+    transition: color 0.3s ease; /* Efeito de transição suave para a cor do texto */
+}
+
+#reference a:hover {
+    color: #0db838; /* Cor diferente ao passar o mouse */
+}
+
+
+/* Estilize o link com o ID "voltar" como um botão destacado */
+#voltar a {
+    color: #000000; /* Cor personalizada para o texto do link */
+    text-decoration: none; /* Remova a sublinhado padrão */
+    font-weight: bold; /* Defina a fonte como negrito */
+    background-color: #39ff14; /* Cor de fundo verde neon */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 4px; /* Cantos arredondados */
+    transition: background-color 0.3s ease; /* Efeito de transição suave para a cor de fundo */
+}
+
+#voltar a:hover {
+    background-color: #007BFF; /* Cor de fundo azul neon ao passar o mouse */
+    color: #fff; /* Cor do texto branco ao passar o mouse */
+}
+
+/* Estilize o parágrafo com o ID "oque" como um estilo de página de livro */
+/* Estilize o parágrafo com o ID "oque" */
+#oque {
+    text-align: justify; /* Justifica o texto para criar um estilo de página de livro */
+    line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+    max-width: 800px; /* Largura máxima do parágrafo para evitar que ele se estenda muito */
+    margin: 0 auto; /* Centraliza o parágrafo horizontalmente na página */
+    padding: 20px; /* Espaçamento interno para melhorar a aparência */
+    background-color: #f5f5f5; /* Cor de fundo cinza claro */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao parágrafo */
+    color: #000; /* Cor da fonte preta */
+    opacity: 0.9; /* Reduz a opacidade do fundo para torná-lo quase imperceptível */
+}
+
+#oque:first-letter {
+    font-size: 150%; /* Aumenta o tamanho da primeira letra para efeito de destaque */
+    font-weight: bold; /* Torna a primeira letra em negrito */
+}
+
+/* Estilize o link com o ID "fonte" */
+#fonte a {
+    color: #124d07; /* Cor do texto dos links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efeito de transição suave para a cor do texto */
+    position: relative; /* Crie um contexto relativo para o link */
+}
+
+#fonte a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #c8cec4 0%, #d7f3c0 100%);
+    z-index: -1; /* Coloque o gradiente atrás do texto */
+    transition: opacity 0.3s ease; /* Efeito de transição suave para a opacidade */
+    opacity: 0; /* Inicialmente, o gradiente é transparente */
+}
+
+#fonte a:hover::before {
+    opacity: 1; /* Gradiente visível ao passar o mouse */
+    z-index: -1; /* Garanta que o gradiente esteja atrás do texto */
+    transition: opacity 0.3s ease; /* Efeito de transição suave para a opacidade */
+}
+
+
+
+
+
