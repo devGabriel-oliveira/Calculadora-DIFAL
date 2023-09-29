@@ -1,5 +1,5 @@
 
-function calcularDIFAL() {
+function calcularDIFAL(){
 
     var calculaInterna = document.getElementById('interna')
     var calculaInterestadual = document.getElementById('interestadual')
@@ -104,26 +104,42 @@ function calcularDIFAL() {
          console.log(ICMSinterno)
          
  
-         
          d = ICMSinterno - ICMS
          dformatado = d.toFixed(numerocasasdecimais)
          difal.innerHTML = dformatado
+        
+
+        
+        
+            }
+
+
+            
+         
  
          }
          
- 
- 
- 
- 
+         
  
  
      }
  
  
- }
+     function Formclean(){
+        
+        document.getElementById('item').value = ''
+        document.getElementById('cst').value = '' 
+        document.getElementById('frete').value = ''
+        document.getElementById('ipi').value = ''
+        document.getElementById('valordifal').value = ''
+        
+        
+    }
+
+ //função para mudar a cor da página 
  
  document.addEventListener("DOMContentLoaded", function () {
-    const toggleModeButton = document.getElementById("toggle-mode");
+    const toggleModeButton = document.getElementById("toggle-mode")
     const body = document.body;
 
     toggleModeButton.addEventListener("click", function () {
