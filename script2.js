@@ -59,3 +59,25 @@ function calcularDIFAL() {
         }
     }
 }
+
+function Formclean(){
+        
+    document.getElementById('item').value = ''
+    document.getElementById('cst').value = '' 
+    document.getElementById('frete').value = ''
+    document.getElementById('ipi').value = ''
+    document.getElementById('valordifal').value = ''
+    
+    
+}
+
+//função para mudar a cor da página 
+
+document.addEventListener("DOMContentLoaded", function () {
+const toggleModeButton = document.getElementById("toggle-mode")
+const body = document.body;
+
+toggleModeButton.addEventListener("click", function () {
+    body.classList.toggle("light-mode")
+})
+})
