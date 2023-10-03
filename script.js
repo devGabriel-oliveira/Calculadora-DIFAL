@@ -13,7 +13,7 @@ function calcularDIFAL(){
     var numerocasasdecimais = 2
 
     // impondo caso o usuário não preencha nenhum número
-    if (calculaInterna.value.trim() == '' || calculaInterestadual.value.trim() == '' || numItem.value.trim() == '' || numCST.value.trim() == '' || numFrete.value.trim() == '' || numIPI.value.trim() == ''){
+    if (calculaInterna.value.trim() == '' || calculaInterestadual.value.trim() == '' || numItem.value.trim() == '' ||  numFrete.value.trim() == '' || numIPI.value.trim() == ''){
         window.alert('[ERRO DE ESPAÇOS VAZIOS] FALTAM DADOS!  preencha corretamente...')
     } else {
 
@@ -59,7 +59,7 @@ function calcularDIFAL(){
             c !== 3 &&
             c !== 8
         )  {
-            window.alert('[CST INCORRETA!] PREENCHA ESTE CAMPO APENAS COM OS NÚMEROS (0,1,2,3,4,5,6,7,8)')
+            window.alert('CST INCORRETA! PREENCHA ESTE CAMPO APENAS COM OS NÚMEROS (0, 1, 2, 3, 4, 5, 6, 7 e 8)')
          } else if (c === 1 || c === 2 ||c === 3 || c === 8) {
             // AliqInterestadual === 0.4
              //interes === 4
